@@ -219,10 +219,53 @@ $altTheme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
 
 // Theme Init
 .theme-dark {
+  .mat-input-element {
+      background-color: inherit;
+      border-color: inherit;
+      box-shadow: inherit;
+      display: inherit;
+      color: white;
+  }
+  .mat-form-field-flex {
+    display: inherit;
+  }
+  .mat-form-field {
+    display: inherit;
+  }
+  .mat-form-field-infix {
+    width: 100%;
+  }
+  .mat-calendar-body-cell, .mat-calendar-body-cell-content {
+    color: white;
+  }
+  .mat-calendar {
+    background-color: $primary;
+  }
+  textarea {
+    resize: none;
+  }
   @include angular-material-theme($theme);
 }
 
 .theme-light {
+  .mat-input-element {
+    background-color: inherit;
+    border-color: inherit;
+    box-shadow: inherit;
+    display: inherit;
+  }
+  .mat-form-field-flex {
+    display: inherit;
+  }
+  .mat-form-field {
+    display: inherit;
+  }
+  textarea {
+    resize: none;
+  }
+  .mat-form-field-infix {
+    width: 100%;
+  }
   @include angular-material-theme($altTheme);
 }
 
@@ -248,4 +291,9 @@ html, body {
 
 .semi-divider {
   margin: 5px !important;
+}
+
+.float_container {
+  display: inline-block;
+  width: 100%;
 }
