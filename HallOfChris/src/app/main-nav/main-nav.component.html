@@ -1,0 +1,40 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav side_shadow" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar color="primary">MENU</mat-toolbar>
+    <mat-nav-list class="navlist">
+      <a mat-list-item href="">HOME</a>
+      <mat-divider class="semi-divider"></mat-divider>
+      <a mat-list-item href="interest_code">CODE</a>
+      <a mat-list-item href="interest_music">MUSIC</a>
+      <a mat-list-item href="interest_community">COMMUNITY</a>
+      <mat-divider class="semi-divider"></mat-divider>
+      <a mat-list-item href="resume">RESUME</a>
+      <a mat-list-item href="about">ABOUT</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" class="down_shadow">
+      <div class="float_container">
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()"
+          *ngIf="isHandset$">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span><a href="">STEALTH GIRAFFE</a></span>
+        <div class="float_right">
+          <button type="button" mat-icon-button class="float_right" [ngClass]="{'rotate_180': vm.themeService.getCurrentTheme() == 'theme-light'}" (click)="vm.toggleTheme();">
+              <mat-icon>tonality_outline</mat-icon>
+          </button>
+        </div>
+      </div>
+    </mat-toolbar>
+      <br/>
+      <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,15 @@
+<mat-card>
+    <h2>{{chris.summonerName | uppercase}}</h2>
+    <div>
+        <span>
+            id: {{chris.id}}
+        </span>
+    </div>
+
+    <mat-divider></mat-divider>
+    <form name="chrisForm" class="">
+        <mat-form-field class="example-full-width">
+            <input name="chris_SummonerName" [(ngModel)]="chris.summonerName" matInput placeholder="summoner name"/>
+        </mat-form-field>
+    </form>          
+</mat-card>

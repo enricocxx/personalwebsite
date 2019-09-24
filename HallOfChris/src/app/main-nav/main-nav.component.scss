@@ -1,0 +1,65 @@
+@import '../../styles.scss';
+
+.side_shadow {
+  -webkit-box-shadow: 5px 70px 5px 0px rgba(0,0,0,0.37);
+  -moz-box-shadow: 5px 70px 5px 0px rgba(0,0,0,0.37);
+  box-shadow: 5px 70px 5px 0px rgba(0,0,0,0.37);
+}
+
+.down_shadow {
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.37);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.37);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.37);
+}
+
+.float_container {
+  display: inline-block;
+  width: 100%;
+}
+
+.float_right {
+  mat-icon {
+    color: $accent;
+  }
+  float: right;
+}
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.dark-background {
+    background-color:#23262d;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navlist{
+  align-content: center;
+}
+
+a{
+  color: white;
+}
+
+button {
+  transition: transform 0.75s;
+}
+
+.rotate_180 {
+  //filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.5);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  display: inline-block;
+}
