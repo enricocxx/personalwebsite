@@ -56,7 +56,7 @@ $mat-light-theme-foreground: (
 );
 
 // Dark Theme text
-$light-text: #ffffff;
+$light-text: #cecece;
 $light-primary-text: $light-text;
 $light-accent-text: rgba($light-primary-text, 0.7);
 $light-disabled-text: rgba($light-primary-text, 0.5);
@@ -111,7 +111,7 @@ $mat-light-theme-background: (
 );
 
 // Dark bg
-$dark-background:     #0c0f14;
+$dark-background:     #20252c;
 $dark-bg-lighter-5:   lighten($dark-background, 7%);
 $dark-bg-lighter-10:  lighten($dark-background, 15%);
 $dark-bg-lighter-20:  lighten($dark-background, 25%);
@@ -244,6 +244,10 @@ $altTheme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
 
 html, body {
   font-family: Aldrich; 
+  min-height: 100%;
+  height: 100%;
+  max-width: 100%;
+  width: 100%;
 }
 
 .semi-divider {
