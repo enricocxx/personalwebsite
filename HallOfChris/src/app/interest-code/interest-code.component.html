@@ -10,33 +10,60 @@
       <h2 class="colour_secondary">
           So Here's My Code Page :D
       </h2>
-      <p>
+      <h5>
           Here I intend to keep track of the development of this website with little snippets of code in a blog format.
           <br>
           Follow along if you like :)
-      </p>
+      </h5>
       <mat-divider color="secondary"></mat-divider>
     </div>
   </div>
   <div fxLayout="row">
     <div fxLayout="column" fxFlex="100" fxFlexFill>
-      
-        <h3 class="colour_secondary">Gists in Angular</h3>
-        <ngx-gist [gistId]="'StealthGiraffe/6216f64b7eaa8d575fb800a6354d3d95'"></ngx-gist>
-        <h4>Angular Hates The "Script" Tag</h4>
-        <p>
-            So here's the deal, Angular doesn't like the "script" tag inside component html files.
-            This is a huge bummer, if like me, you want to include git lab snippets or github gists
-            which are usually included with a line such as
-            <br/><br/>
-            INSERT THE LINE HERE WHEN YOU LEARN HOW TO DO THAT IDIOT.
-            <br/><br/>
-            To get around this, I tried a couple of js related tricks to insert script tags. This worked ...
-            about as well as you might expect (it didnt).
-            In the end my solution came in the form of a node package called "ngx-gist".
-             
-            
-        </p>
+        <mat-expansion-panel name="Gists in Angular">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <h3 class="colour_secondary">Gists in Angular</h3>
+            </mat-panel-title>
+            <mat-panel-description>
+              <h4>Angular Hates The "Script" Tag</h4>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <ngx-gist [gistId]="'StealthGiraffe/6216f64b7eaa8d575fb800a6354d3d95'"></ngx-gist>
+          <p>
+              So here's the deal, Angular doesn't like the "script" tag inside component html files.
+              This is a huge bummer, if like me, you want to include git lab snippets or github gists
+              which are usually included with a line such as
+              <br/><br/>
+              INSERT THE LINE HERE WHEN YOU LEARN HOW TO DO THAT IDIOT.
+              <br/><br/>
+              To get around this, I tried a couple of js related tricks to insert script tags. This worked ...
+              about as well as you might expect (it didnt).
+              In the end my solution came in the form of a node package called "ngx-gist".
+          </p>        
+        </mat-expansion-panel>  
+        <mat-expansion-panel name="Gists in Angular">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <h3 class="colour_secondary">Angular and Firebase</h3>
+              </mat-panel-title>
+              <mat-panel-description>
+                <h4>What The Heck Am I Doing?</h4>
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <ngx-gist [gistId]="'StealthGiraffe/6216f64b7eaa8d575fb800a6354d3d95'"></ngx-gist>
+            <p>
+                So here's the deal, Angular doesn't like the "script" tag inside component html files.
+                This is a huge bummer, if like me, you want to include git lab snippets or github gists
+                which are usually included with a line such as
+                <br/><br/>
+                INSERT THE LINE HERE WHEN YOU LEARN HOW TO DO THAT IDIOT.
+                <br/><br/>
+                To get around this, I tried a couple of js related tricks to insert script tags. This worked ...
+                about as well as you might expect (it didnt).
+                In the end my solution came in the form of a node package called "ngx-gist".
+            </p>        
+        </mat-expansion-panel>  
     </div>
   </div>
 </div>
