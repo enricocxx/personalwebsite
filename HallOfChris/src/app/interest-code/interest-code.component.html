@@ -1,15 +1,36 @@
 <!-- content-->
-<ngx-gist [gistId]="'StealthGiraffe/6216f64b7eaa8d575fb800a6354d3d95'"></ngx-gist>
+<!-- setting up a plan for this page cause im too tired to code it right now
+    Title, description of some current projects.
+    Collapsible sections with code snippets and little blog posts
+    link github and gitlab
+-->
+<div class="container" style="height: 100%">
+  <div fxLayout="row">
+    <div fxLayout="column">
+      <h3>
+          So Here's My Code Page :D
+      </h3>
+      <p>
+          Here I intend to keep track of the development of this website with little snippets of code in a blog format.
+          <br>
+          Follow along if you like :)
+      </p>
+      <mat-divider></mat-divider>
 
-<div class="container">
-  <div fxLayout="row" fxLayoutAlign="center">
-    <div fxLayout="column" fxLayout.sm="row" fxFlex="33%" class="eq-height">
-        <ngx-gist [gistId]="'StealthGiraffe/6216f64b7eaa8d575fb800a6354d3d95'"></ngx-gist>
     </div>
-    <div fxLayout="column" fxFlex="33%">
-    </div>
-    <div fxLayout="column" fxFlex="33%">
+  </div>
+  <div fxLayout="row">
+    <div fxLayout="column" fxFlex="100" fxFlexFill>
+        <h4>Gists in Angular</h4>
         <ngx-gist [gistId]="'StealthGiraffe/6216f64b7eaa8d575fb800a6354d3d95'"></ngx-gist>
     </div>
   </div>
+    <!-- <div fxLayout="column" fxLayout.sm="row" fxFlex="33%" class="eq-height">
+        <ngx-gist [gistId]="'StealthGiraffe/6216f64b7eaa8d575fb800a6354d3d95'"></ngx-gist>
+    </div>
+    <div fxLayout="column" fxFlex="33%">
+    </div>
+    <div fxLayout="column" fxFlex="33%">
+        <ngx-gist [gistId]="'StealthGiraffe/6216f64b7eaa8d575fb800a6354d3d95'"></ngx-gist>
+    </div> -->
 </div>
