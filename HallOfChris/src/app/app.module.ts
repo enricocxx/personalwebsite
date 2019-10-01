@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { MatCarouselSlide, MatCarouselSlideComponent } from '@ngmodule/material-carousel';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxGistModule } from 'ngx-gist/dist/ngx-gist.module';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -50,7 +51,8 @@ import { PageAboutComponent } from './page-about/page-about.component';
     MatIconModule,
     MatListModule,
     MatCarouselModule,
-    NgbModule
+    NgbModule,
+    NgxGistModule
   ],
   providers: [],
   bootstrap: [AppComponent]
