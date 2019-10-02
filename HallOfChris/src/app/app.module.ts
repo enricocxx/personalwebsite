@@ -25,6 +25,7 @@ import { InterestMusicComponent } from './interest-music/interest-music.componen
 import { InterestCommunityComponent } from './interest-community/interest-community.component';
 import { PageResumeComponent } from './page-resume/page-resume.component';
 import { PageAboutComponent } from './page-about/page-about.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { PageAboutComponent } from './page-about/page-about.component';
     InterestMusicComponent,
     InterestCommunityComponent,
     PageResumeComponent,
-    PageAboutComponent
+    PageAboutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
