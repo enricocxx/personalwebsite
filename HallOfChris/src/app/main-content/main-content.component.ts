@@ -9,6 +9,7 @@ export class MainContentComponent implements OnInit {
 
   constructor() { }
 
+  imageUrlArray = ["../assets/GuitarPlaying.jpg"]
   ngOnInit() {
   }
 
