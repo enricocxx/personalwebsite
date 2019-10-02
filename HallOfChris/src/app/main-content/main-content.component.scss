@@ -1,9 +1,11 @@
+@import '../../styles.scss';
+
 .carousel-item img{
     width: 100%;
-    height: 60vh;
+    height: 85vh;
 }
 .carousel-item{
-    height: 60vh;
+    height: 100%;
     text-align: center;
 } 
 .content-card {
@@ -11,4 +13,23 @@
 }
 .eq-height {
     height: 100%;
+}
+
+.avatar_card {
+    align-content: center;
+    background-image: url('../../assets/babyMe.png');
+    background-size:cover; 
+    position: absolute; 
+    top:2vh; 
+    left: 2vh; 
+    width:25vh; 
+    height:25vh; 
+    border-radius: 100%;
+    mat-card-title-group {
+        position: absolute; 
+        bottom: 20%; 
+        left: 10%;
+        color: rgb(27, 27, 27);
+        font: bold !important;
+    }
 }

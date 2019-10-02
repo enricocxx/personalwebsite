@@ -34,10 +34,16 @@
         </div>
       </div>
     </mat-toolbar>
-        <br/>
-        <router-outlet class="full_size_router"></router-outlet>
-        <br/>
-      <app-footer></app-footer>
+      <div fxLayout="row">
+        <div fxLayout="column" fxFlex="100%">
+          <router-outlet class=""></router-outlet>
+        </div>
+      </div>
+      <div fxLayout="row wrap">
+          <div fxLayout="column" fxFlex="100%">
+              <app-footer></app-footer>
+          </div>
+      </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
 

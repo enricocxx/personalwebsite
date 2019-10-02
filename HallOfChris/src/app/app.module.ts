@@ -26,6 +26,7 @@ import { InterestCommunityComponent } from './interest-community/interest-commun
 import { PageResumeComponent } from './page-resume/page-resume.component';
 import { PageAboutComponent } from './page-about/page-about.component';
 import { FooterComponent } from './footer/footer.component';
+import { InterestCardsComponent } from './interest-cards/interest-cards.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { FooterComponent } from './footer/footer.component';
     InterestCommunityComponent,
     PageResumeComponent,
     PageAboutComponent,
-    FooterComponent
+    FooterComponent,
+    InterestCardsComponent
   ],
   imports: [
     BrowserModule,
