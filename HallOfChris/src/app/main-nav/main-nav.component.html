@@ -2,7 +2,7 @@
   <mat-sidenav #drawer class="sidenav side_shadow" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
+      [opened]="true">
     <mat-toolbar color="primary">MENU</mat-toolbar>
     <mat-nav-list class="navlist">
       <a mat-list-item href="">HOME</a>
