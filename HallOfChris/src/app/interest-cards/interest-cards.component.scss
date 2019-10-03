@@ -1,0 +1,30 @@
+@import '../../styles.scss';
+
+.card_container {
+    position: absolute !important; 
+    bottom: 50px !important; 
+    min-width:100%;
+}
+
+.elevated {
+    @include mat-elevation-transition;
+    @include mat-elevation(2);
+    transition: background-color 0.2s ease;
+    background: rgba(0, 0, 0, 0.6) !important; 
+  
+    &:hover {
+      @include mat-elevation(24);    
+      background: rgba(33, 66, 36, 0.8) !important; 
+
+    }
+  }
+
+mat-card {
+    min-height: 100%; 
+    // background: rgba(0,0,0,0.6) !important; 
+
+    h3, p{
+        color: $light-text;
+    }
+
+}

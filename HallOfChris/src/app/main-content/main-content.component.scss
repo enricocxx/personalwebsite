@@ -1,14 +1,42 @@
-.picsum-img-wrapper img{
+@import '../../styles.scss';
+
+.carousel-item img{
     width: 100%;
-    height: 60vh;
+    height: 85vh;
 }
 .carousel-item{
-    height: 60vh;
+    height: 100%;
     text-align: center;
 } 
 .content-card {
+    mat-expansion-panel {
+        margin: 0vh 2vh 2vh 0vh;
+    }
     height: 100%;
 }
 .eq-height {
     height: 100%;
+}
+
+.carousel-control {
+    z-index:0;
+}
+
+.avatar_card {
+    align-content: center;
+    background-image: url('../../assets/babyMe.png');
+    background-size:cover; 
+    position: absolute; 
+    top:2vh; 
+    left: 2vh; 
+    width:25vh; 
+    height:25vh; 
+    border-radius: 100%;
+    mat-card-title-group {
+        position: absolute; 
+        bottom: 20%; 
+        left: 10%;
+        color: black;
+        font: bold !important;
+    }
 }

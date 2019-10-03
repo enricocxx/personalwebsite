@@ -1,0 +1,13 @@
+@import '../../styles.scss';
+
+.float_container {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .float_right {
+    mat-icon {
+      color: $accent;
+    }
+    float: right;
+  }

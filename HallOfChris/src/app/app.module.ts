@@ -4,6 +4,7 @@ import { MaterialModule } from './mat-module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCarouselModule } from '@ngmodule/material-carousel';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxGistModule } from 'ngx-gist/dist/ngx-gist.module';
 import { QuillModule } from 'ngx-quill';
 
 import { AngularFireModule } from '@angular/fire';
@@ -24,6 +25,8 @@ import { InterestMusicComponent } from './interest-music/interest-music.componen
 import { InterestCommunityComponent } from './interest-community/interest-community.component';
 import { PageResumeComponent } from './page-resume/page-resume.component';
 import { PageAboutComponent } from './page-about/page-about.component';
+import { FooterComponent } from './footer/footer.component';
+import { InterestCardsComponent } from './interest-cards/interest-cards.component';
 import { NewBlogpostComponent } from './new-blogpost/new-blogpost.component';
 import { DetailBlogpostComponent } from './detail-blogpost/detail-blogpost.component';
 import { HomeBlogpostComponent } from './home-blogpost/home-blogpost.component';
@@ -39,6 +42,8 @@ import { HomeBlogpostComponent } from './home-blogpost/home-blogpost.component';
     InterestCommunityComponent,
     PageResumeComponent,
     PageAboutComponent,
+    FooterComponent,
+    InterestCardsComponent
     NewBlogpostComponent,
     DetailBlogpostComponent,
     HomeBlogpostComponent
@@ -53,6 +58,8 @@ import { HomeBlogpostComponent } from './home-blogpost/home-blogpost.component';
     BrowserAnimationsModule,
     LayoutModule,
     MatCarouselModule,
+    NgbModule,
+    NgxGistModule
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule.enablePersistence(),
     QuillModule.forRoot()

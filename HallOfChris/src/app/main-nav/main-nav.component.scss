@@ -1,5 +1,9 @@
 @import '../../styles.scss';
 
+.sidenav-container {
+  height: 100%;
+}
+
 .side_shadow {
   -webkit-box-shadow: 5px 70px 5px 0px rgba(0,0,0,0.37);
   -moz-box-shadow: 5px 70px 5px 0px rgba(0,0,0,0.37);
@@ -54,6 +58,13 @@ button {
   transition: transform 0.75s;
 }
 
+app-footer {
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  // z-index: 100;
+  //background-color: #c0ccc2;
+}
 .rotate_180 {
   //filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.5);
   -webkit-transform: rotate(180deg);
@@ -62,4 +73,18 @@ button {
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
   display: inline-block;
+}
+
+.full_size_router {
+  flex: 1 1 auto;
+  display: flex;
+  overflow: hidden;
+}
+
+.img_background {
+  background: url(/assets/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
