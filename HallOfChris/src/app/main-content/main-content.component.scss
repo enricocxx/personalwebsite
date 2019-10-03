@@ -9,6 +9,9 @@
     text-align: center;
 } 
 .content-card {
+    mat-expansion-panel {
+        margin: 0vh 2vh 2vh 0vh;
+    }
     height: 100%;
 }
 .eq-height {
