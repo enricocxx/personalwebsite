@@ -1,0 +1,47 @@
+<form class="create-form" [formGroup]="blogPostForm" (ngSubmit)="onSubmit(blogPostForm.value)">
+    <!--TITLE-->
+    <div class="form-group">
+        <mat-form-field class="input-style">
+            <input matInput placeholder="TITLE" class="form-control" formControlName="title">
+        </mat-form-field>
+        <!-- <ng-container *ngFor="let validation of validation_messages.name">
+            <mat-error *ngIf="exampleForm.get('name').hasError(validation.type) && (exampleForm.get('name').dirty || exampleForm.get('name').touched)">{{validation}}</mat-error>
+        </ng-container> -->
+    </div>
+    <!--CONTENT-->
+    <div>
+            <quill-editor  #editor [style.display]="hide ? 'none' : 'block'" formControlName="content"></quill-editor>
+
+            <!-- <textarea matInput placeholder="CONTENT" class="form-control" formControlName="content"></textarea> -->
+    </div>
+    <!-- <div>
+        <label>CONTENT</label>
+        <quill-editor></quill-editor>
+    </div> -->
+    <!--DATE-->
+    <div class="">
+        <mat-form-field class="">
+            <input matInput [matDatepicker]="date" placeholder="DATE" class="form-control" formControlName="date">
+            <mat-datepicker-toggle matSuffix [for]="date"></mat-datepicker-toggle>
+            <mat-datepicker color="accent" #date></mat-datepicker>
+        </mat-form-field>
+        <!-- <ng-container *ngFor="let validation of validation_messages.name">
+            <mat-error *ngIf="exampleForm.get('name').hasError(validation.type) && (exampleForm.get('name').dirty || exampleForm.get('name').touched)">{{validation}}</mat-error>
+        </ng-container> -->
+    </div>
+    <!--AUTHOR-->
+    <div class="form-group">
+        <mat-form-field class="input-style">
+            <input matInput placeholder="AUTHOR" class="form-control" formControlName="author">
+        </mat-form-field>
+        <!-- <ng-container *ngFor="let validation of validation_messages.name">
+            <mat-error *ngIf="exampleForm.get('name').hasError(validation.type) && (exampleForm.get('name').dirty || exampleForm.get('name').touched)">{{validation}}</mat-error>
+        </ng-container> -->
+    </div>
+
+    <div class="row submit-button-container float_container">
+        <div class="col-md-4" style="float: right;">
+            <button mat-raised-button class="submit-button" color="primary" type="submit" [disabled]="!blogPostForm.valid">Create</button>
+        </div>
+    </div>
+</form>
