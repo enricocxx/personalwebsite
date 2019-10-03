@@ -43,7 +43,7 @@ import { HomeBlogpostComponent } from './home-blogpost/home-blogpost.component';
     PageResumeComponent,
     PageAboutComponent,
     FooterComponent,
-    InterestCardsComponent
+    InterestCardsComponent,
     NewBlogpostComponent,
     DetailBlogpostComponent,
     HomeBlogpostComponent
@@ -59,7 +59,7 @@ import { HomeBlogpostComponent } from './home-blogpost/home-blogpost.component';
     LayoutModule,
     MatCarouselModule,
     NgbModule,
-    NgxGistModule
+    NgxGistModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule.enablePersistence(),
     QuillModule.forRoot()
