@@ -15,6 +15,10 @@
     height: 100%;
 }
 
+.carousel-control {
+    z-index:0;
+}
+
 .avatar_card {
     align-content: center;
     background-image: url('../../assets/babyMe.png');
@@ -29,7 +33,7 @@
         position: absolute; 
         bottom: 20%; 
         left: 10%;
-        color: rgb(27, 27, 27);
+        color: black;
         font: bold !important;
     }
 }
