@@ -13,43 +13,36 @@
               
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <div class="carousel-caption d-md-block">
-                    </div>
-                    <img src="../assets/Guitar.jpg" alt="Music" >
+                    <img src="../assets/coding.jpg" alt="Code">
                   </div>
                   <div class="carousel-item">
-                    <img src="../assets/coding.jpg" alt="Code">
+                    <img src="../assets/Guitar.jpg" alt="Music" >
                   </div>
                   <div class="carousel-item">
                     <img src="../assets/Community1.jpg" alt="Community">
                   </div>
                   <mat-card [class.mat-elevation-z16]="true" class="avatar_card">
-                      <!--TODO: add this text to the image itself-->
-                      <mat-card-title-group>
-                          <!-- <mat-card-title>Hi, I'm Nathan</mat-card-title> -->
-                      </mat-card-title-group>
                   </mat-card>
-                  <app-interest-cards></app-interest-cards>
+                  <div fxHide.xs>
+                    <app-interest-cards></app-interest-cards>
+                  </div>
                 </div>
-              
-                <!-- <a class="carousel-control carousel-control-prev" data-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control carousel-control-next" data-slide="next">
-                  <span class="carousel-control-next-icon"></span>
-                </a> -->
-                  
             </div>
         </div>
     </div>
+    <div fxHide.xl fxHide.lg fxHide.md>
+        <mat-divider style="margin: 2vh;"></mat-divider>
+        <app-interest-cards></app-interest-cards>
+    </div>
     <mat-divider style="margin: 2vh;"></mat-divider>
-    <div style="margin: 2vh" fxLayout="row" fxLayoutGap="3vh">
-      <div fxLayout="column" fxFlex="50%" fxLayoutGap="2vh">
+    <div style="margin: 2vh" fxLayout="row" fxLayout.xs="column" fxLayoutGap="3vh">
+      <div fxLayout="column" fxLayout.xs="row" fxFlex="50%" fxLayoutGap="2vh">
         <mat-card class="content-card">
           <mat-expansion-panel name="Gists in Angular">
               <mat-expansion-panel-header>
                 <mat-panel-title>
-                  <h5 class="colour_secondary">I'm a sOfTWaRe DeVelOpeR</h5>
+                  <h5 fxHide.xs class="colour_secondary">I'm a sOfTWaRe DeVelOpeR</h5>
+                  <h6 fxHide.xl fxHide.lg fxHide.md class="colour_secondary">I'm a sOfTWaRe DeVelOpeR</h6>
                 </mat-panel-title>
               </mat-expansion-panel-header>
               <p>From operating systems work in C to This janky website - I love it all!</p>
@@ -57,7 +50,8 @@
           <mat-expansion-panel name="Gists in Angular">
               <mat-expansion-panel-header>
                 <mat-panel-title>
-                  <h5 class="colour_secondary">I'm like ... a musician and a poet sooooo </h5>
+                  <h5 fxHide.xs class="colour_secondary">I'm like ... a musician and a poet sooooo</h5>
+                  <h6 fxHide.xl fxHide.lg fxHide.md class="colour_secondary">I'm like ... a musician and a poet sooooo</h6>
                 </mat-panel-title>
               </mat-expansion-panel-header>
               <p>Look, I was raised on rom coms and Folk like Simon and Garfunkel.
@@ -67,7 +61,8 @@
           <mat-expansion-panel name="Gists in Angular">
               <mat-expansion-panel-header>
                 <mat-panel-title>
-                  <h5 class="colour_secondary">Stealth ... Giraffe???</h5>
+                  <h5 fxHide.xs class="colour_secondary">Stealth ... Giraffe???</h5>
+                  <h6 fxHide.xl fxHide.lg fxHide.md class="colour_secondary">Stealth ... Giraffe???</h6>
                 </mat-panel-title>
               </mat-expansion-panel-header>
               <p> Dear reader, <br/><br/>
@@ -81,7 +76,8 @@
           <mat-expansion-panel name="Gists in Angular">
               <mat-expansion-panel-header>
                 <mat-panel-title>
-                  <h5 class="colour_secondary">I'm a Mental Health Activist</h5>
+                  <h5 fxHide.xs class="colour_secondary">I'm a Mental Health Activist</h5>
+                  <h6 fxHide.xl fxHide.lg fxHide.md class="colour_secondary">I'm a Mental Health Activist</h6>
                 </mat-panel-title>
               </mat-expansion-panel-header>
               <p>Now this I won't meme. Mental health is an incredibly important and defining part
@@ -90,15 +86,15 @@
           </mat-expansion-panel>  
         </mat-card>
       </div>
-      <div fxLayout="column" fxFlex="50%">
+      <div fxLayout="column" fxLayout.xs="row" fxFlex="50%">
        <mat-card>
-          <h4>Want to Learn?</h4>
+          <a href="interest_code"><h4>Want to Learn?</h4></a>
           <p>Go to the code section where I blog this nonsensical project!</p>
           <br/>
-          <h4>Want to be impressed by my talented musical friends?</h4>
+          <a href="interest_music"><h4>Want to Hear Some Music?</h4></a>
           <p>Check out the music section and all its audible goodness.</p>
           <br/>
-          <h4>Want to find out what I do outside of coding?</h4>
+          <a href="interest_community"><h4>My life beyond coding</h4></a>
           <p>Check out the community section for a look into extra-curricular life at the University of Guelph</p>
         </mat-card>
       </div>

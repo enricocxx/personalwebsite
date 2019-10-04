@@ -1,10 +1,13 @@
 @import '../../styles.scss';
 
-.card_container {
+@media only screen and (min-width: 1000px) {
+  .card_container {
     position: absolute !important; 
     bottom: 50px !important; 
     min-width:100%;
+  }
 }
+
 
 .elevated {
     @include mat-elevation-transition;
