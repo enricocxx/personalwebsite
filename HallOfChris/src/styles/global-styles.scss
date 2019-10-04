@@ -1,15 +1,11 @@
 @import '../styles.scss';
 
 a {
-    color: $accent;
+    color: $accent !important;
+    text-decoration: none !important;
     :hover {
         color: $accent-darker;
-    }
-    :focus {
-        color: $accent-darker;
-    }
-    :link {
-        color: $accent-darker;
+        text-decoration: none !important;
     }
 }
 
