@@ -30,6 +30,10 @@ import { InterestCardsComponent } from './interest-cards/interest-cards.componen
 import { NewBlogpostComponent } from './new-blogpost/new-blogpost.component';
 import { DetailBlogpostComponent } from './detail-blogpost/detail-blogpost.component';
 import { HomeBlogpostComponent } from './home-blogpost/home-blogpost.component';
+import { ArticleListComponent } from './articles/article-list/article-list.component';
+import { ArticleTileComponent } from './articles/article-tile/article-tile.component';
+import { TimelineListComponent } from './timelines/timeline-list/timeline-list.component';
+import { TimelineEventComponent } from './timelines/timeline-event/timeline-event.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +50,11 @@ import { HomeBlogpostComponent } from './home-blogpost/home-blogpost.component';
     InterestCardsComponent,
     NewBlogpostComponent,
     DetailBlogpostComponent,
-    HomeBlogpostComponent
+    HomeBlogpostComponent,
+    ArticleListComponent,
+    ArticleTileComponent,
+    TimelineListComponent,
+    TimelineEventComponent
   ],
   imports: [
     BrowserModule,
