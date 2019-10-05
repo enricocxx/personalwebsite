@@ -20,3 +20,19 @@ a {
 .colour_primary_darker {
     color: $primary-darker-intense
 }
+
+.height_inherit {
+    height: inherit;
+}
+
+.height_full {
+    height: 100%;
+}
+
+.mat-tab-body-wrapper, .ng-star-inserted {
+    flex-grow: 1;
+}
+
+mat-tab-body {
+    flex-grow: 1;
+}

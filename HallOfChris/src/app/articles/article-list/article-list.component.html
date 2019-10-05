@@ -1,1 +1,5 @@
-<p>article-list works!</p>
+<mat-grid-list cols="3" rowHeight="fit" class="height_full">
+    <mat-grid-tile *ngFor="let article of articles">
+        {{article}}
+    </mat-grid-tile>
+</mat-grid-list>

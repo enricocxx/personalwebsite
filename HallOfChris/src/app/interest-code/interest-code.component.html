@@ -1,16 +1,12 @@
-<div style="margin: 2vh;">
-  <mat-tab-group [disableRipple]="false">
-      <mat-tab label="DEVELOPMENT">
-        <div fxLayout="row">
+<div style="margin: 2vh;" class="height_inherit">
+  <mat-tab-group [disableRipple]="false" class="height_inherit">
+      <mat-tab label="DEVELOPMENT" class="height_inherit">
+        <div fxLayout="row" fxFlex="100%" class="height_inherit">
           <div fxLayout="column" fxFlex="66%">
-              <mat-card>
-                bob
-              </mat-card>
-            </div>
-            <div fxLayout="column" fxFlex="auto">
-              <mat-card>
-                frank
-              </mat-card>
+            <app-article-list></app-article-list>
+          </div>
+          <div fxLayout="column" fxFlex="auto">
+            <app-timeline-list class="height_full"></app-timeline-list>
           </div>
         </div>
       </mat-tab>

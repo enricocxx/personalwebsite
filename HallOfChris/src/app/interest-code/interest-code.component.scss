@@ -12,3 +12,11 @@ mat-divider {
 mat-expansion-panel {
     margin: 0px 5px 5px 0px;
 }
+
+app-article-list {
+    height:100%;
+}
+
+.mat-tab-labels {
+    display: block !important;
+}
