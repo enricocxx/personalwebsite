@@ -9,7 +9,8 @@ export class TimelineListComponent implements OnInit {
 
   constructor() { }
 
-  events: any[] =["I want to make a website!", "Choosing Frameworks", "Moving Hosts", "Homepage Triumph!"];
+  events: any[] =["I want to make a website!", "Choosing Frameworks", "Moving Hosts", "Homepage Triumph!",
+  "I want to make a website!", "Choosing Frameworks", "Moving Hosts", "Homepage Triumph!"];
 
   ngOnInit() {
   }

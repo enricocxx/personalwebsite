@@ -16,7 +16,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary" class="down_shadow">
+    <mat-toolbar color="primary" class="down_shadow" style="z-index: 100;">
       <div class="float_container">
         <button
           type="button"
@@ -34,7 +34,7 @@
         </div>
       </div>
     </mat-toolbar>
-      <div fxLayout="row">
+      <div fxLayout="row" class="height_full" style="z-index: 0;">
         <div fxLayout="column" fxFlex="100%" >
           <router-outlet class=""></router-outlet>
         </div>
