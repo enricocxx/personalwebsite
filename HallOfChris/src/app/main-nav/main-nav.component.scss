@@ -43,7 +43,6 @@
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
-  z-index: 1;
 }
 
 .navlist{
@@ -62,7 +61,6 @@ app-footer {
   position: sticky;
   bottom: 0px;
   width: 100%;
-  // z-index: 100;
   //background-color: #c0ccc2;
 }
 .rotate_180 {
