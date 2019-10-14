@@ -1,28 +1,28 @@
 <div  style="margin: 2vh;" class="container_full_height">
   <div fxLayout="row">
     <div fxLayout="column" fxFlex="100%">
-        <mat-tab-group [disableRipple]="false" class="">
-          <mat-tab label="DEVELOPMENT" class="">
-            <div fxLayout="row" fxFlex="100%" class="">
-              <div fxLayout="column" fxFlex="66%">
-                <app-article-list></app-article-list>
-              </div>
-              <div fxLayout="column" fxFlex="auto">
-                <app-timeline-list class=""></app-timeline-list>
-              </div>
+      <mat-tab-group [disableRipple]="false" class="">
+        <mat-tab label="DEVELOPMENT" class="">
+          <div fxLayout="row" fxLayout.xs="column" fxFlex="100%" class="">
+            <div fxLayout="column" fxLayout.xs="row" fxFlex="66%">
+              <app-article-list></app-article-list>
             </div>
-          </mat-tab>
-          <mat-tab label="ENVIRONMENT" class="">
-              <div fxLayout="row" fxFlex="100%" class="">
-                  <div fxLayout="column" fxFlex="66%">
-                  </div>
-                  <div fxLayout="column" fxFlex="auto">
-                  </div>
-              </div>
-          </mat-tab>
-          <mat-tab label="FRAMEWORKS" class="">
-          </mat-tab>
-        </mat-tab-group>
+            <div fxLayout="column" fxLayout.xs="row" fxFlex="auto">
+              <app-timeline-list class=""></app-timeline-list>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="ENVIRONMENT" class="">
+          <div fxLayout="row" fxFlex="100%" class="">
+            <div fxLayout="column" fxFlex="66%">
+            </div>
+            <div fxLayout="column" fxFlex="auto">
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab label="FRAMEWORKS" class="">
+        </mat-tab>
+      </mat-tab-group>
     </div>
   </div>
-</div>  
+</div>

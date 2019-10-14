@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Article} from '../article';
+import { FirebaseService } from '../../services/firebase/firebase.service';
 
 @Component({
   selector: 'app-article-list',
@@ -7,12 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticleListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private firebaseService: FirebaseService) {} 
   
-  articles: any[] = ['1','2','3','4','5','6'];
-
-  ngOnInit() {
-    console.log(this.articles);
+  //create local array of Articles
+  articles: Article[] = []; 
+  
+  readCollection() :  void {
+    this.firebaseService.readArticles().then((res) => {
+      // return res; 
+      res.foreach
+      this.articles.concat(res);
+      //console.log(this.articles);
+    });
   }
 
+  ngOnInit() {
+    this.readCollection(); 
+    console.log(this.articles);
+    //this.articles.concat(this.readCollection());
+  }
+  
 }

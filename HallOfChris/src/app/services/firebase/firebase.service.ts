@@ -7,6 +7,17 @@ import { AngularFirestore } from '@angular/fire/firestore';
 })
 export class FirebaseService {
   constructor(private afs: AngularFirestore) { }
+  /*readBlogPostsTest
+   * returns a promise with all items from the blogpost collection
+   * 
+  */
+  readArticles() {
+    return new Promise<any>((resolve, reject) => {
+      this.afs.collection('article_summary').valueChanges().subscribe( items => {
+        resolve(items);
+      });
+    });
+  }
 
   createBlogPost(value: any) {
     return this.afs.collection('blog_post').add({
