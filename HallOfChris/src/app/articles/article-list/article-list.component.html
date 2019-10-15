@@ -1,7 +1,7 @@
 <mat-grid-list cols="3" rowHeight="1:1">
     <mat-grid-tile *ngFor="let article of articles">
         <div style="padding: 2vh;" class="height_full width_full">
-            <app-article-tile class="height_full width_full"></app-article-tile>
+            <app-article-tile [article]="article" class="height_full width_full"></app-article-tile>
         </div>
     </mat-grid-tile>
 </mat-grid-list>

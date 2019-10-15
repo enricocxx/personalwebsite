@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
-
+import { Article } from '../../articles/article';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,8 @@ export class FirebaseService {
   /*readBlogPostsTest
    * returns a promise with all items from the blogpost collection
    * 
-  */
+   */
+
   readArticles() {
     return new Promise<any>((resolve, reject) => {
       this.afs.collection('article_summary').valueChanges().subscribe( items => {

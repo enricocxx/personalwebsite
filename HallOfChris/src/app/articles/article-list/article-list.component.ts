@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Article} from '../article';
+import { Article } from '../article';
 import { FirebaseService } from '../../services/firebase/firebase.service';
 
 @Component({
@@ -15,18 +15,22 @@ export class ArticleListComponent implements OnInit {
   articles: Article[] = []; 
   
   readCollection() :  void {
-    this.firebaseService.readArticles().then((res) => {
-      // return res; 
-      res.foreach
-      this.articles.concat(res);
-      //console.log(this.articles);
+    this.firebaseService.readArticles().then(items => {
+      console.log(items);
+      items.forEach(item => {
+        console.log(item);
+        this.articles.push(new Article(item.Author, item.Title, item.Date.toDate(), item.Summary))
+      })
+      //this.articles = items.concat(this.articles);
     });
   }
 
   ngOnInit() {
-    this.readCollection(); 
-    console.log(this.articles);
-    //this.articles.concat(this.readCollection());
+    this.readCollection();
+    //gotta be a better way of waiting for this to resolve
+    setTimeout(() => {
+      console.log(this.articles);
+    }, 1000)
   }
   
 }

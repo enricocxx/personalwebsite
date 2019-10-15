@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Article } from '../article';
 
 @Component({
   selector: 'app-article-tile',
@@ -9,7 +10,12 @@ export class ArticleTileComponent implements OnInit {
 
   constructor() { }
 
+  @Input() article: Article
+  
+  dateString:String;
+  
   ngOnInit() {
+    this.dateString = this.article.date.toDateString(); 
   }
 
 }

@@ -1,11 +1,13 @@
 <div class="height_full width_full">
     <mat-card class="height_full width_full">
         <mat-card-title-group>
-            <mat-card-title class="colour_primary_darker">Title</mat-card-title>
-            <mat-card-subtitle>Subtitle</mat-card-subtitle>
+          <mat-card-title class="colour_primary_darker">{{this.article.title}}</mat-card-title>
+          <mat-card-subtitle>{{this.dateString}}</mat-card-subtitle>
         </mat-card-title-group>
         <mat-card-content>
-            {{content}}
+          <p>
+            {{this.article.summary}}
+          </p>
         </mat-card-content>
     </mat-card>
 </div>
